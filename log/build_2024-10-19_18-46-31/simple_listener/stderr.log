@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:17 (find_package):
+  By not providing "FindNetwork.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Network", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Network" with any
+  of the following names:
+
+    NetworkConfig.cmake
+    network-config.cmake
+
+  Add the installation prefix of "Network" to CMAKE_PREFIX_PATH or set
+  "Network_DIR" to a directory containing one of the above files.  If
+  "Network" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

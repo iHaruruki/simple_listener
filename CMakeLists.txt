@@ -21,7 +21,7 @@ ament_target_dependencies(simple_listener rclcpp std_msgs YARP)
 #target_link_libraries(ros2_yarp_bridge YARP)
 
 install(TARGETS
-simple_listener
+  simple_listener
   DESTINATION lib/${PROJECT_NAME}
   )
 

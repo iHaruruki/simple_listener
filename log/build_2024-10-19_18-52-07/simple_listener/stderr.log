@@ -1,0 +1,8 @@
+[0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/YARP/YARPConfig.cmake:233 (message):
+  The YARP_INCLUDE_DIRS variable is deprecated
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:9223372036854775807 (_yarp_deprecated_variable_warning)
+  /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:112 (list_append_unique)
+  CMakeLists.txt:19 (ament_target_dependencies)
+
+[0m

@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.000203] (simple_listener) JobQueued: {'identifier': 'simple_listener', 'dependencies': OrderedDict()}
+[0.000264] (simple_listener) JobStarted: {'identifier': 'simple_listener'}
+[0.018190] (simple_listener) JobProgress: {'identifier': 'simple_listener', 'progress': 'cmake'}
+[0.018954] (simple_listener) Command: {'cmd': ['/usr/bin/cmake', '/home/peach/ros2_ws/src/simple_listener', '-DCMAKE_INSTALL_PREFIX=/home/peach/ros2_ws/src/simple_listener/install/simple_listener'], 'cwd': '/home/peach/ros2_ws/src/simple_listener/build/simple_listener', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'peach'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peach'), ('OLDPWD', '/home/peach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('SYSTEMD_EXEC_PID', '21157'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/peach/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'peach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/peach-virtual-machine:@/tmp/.ICE-unix/1254,unix/peach-virtual-machine:/tmp/.ICE-unix/1254'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e76a0257_602a_4fb4_bf27_0f8ff2ce8818'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JDY3V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1076'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peach/install/simple_listener:/home/peach/install/ros2_bridage_yarp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/peach/ros2_ws/src/simple_listener/build/simple_listener'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peach/install/simple_listener:/home/peach/install/ros2_bridage_yarp:/opt/ros/humble')]), 'shell': False}
+[0.098592] (-) TimerEvent: {}
+[0.196085] (simple_listener) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.198715] (-) TimerEvent: {}
+[0.299081] (-) TimerEvent: {}
+[0.339965] (simple_listener) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.363542] (simple_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399348] (-) TimerEvent: {}
+[0.500370] (-) TimerEvent: {}
+[0.561466] (simple_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.565397] (simple_listener) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.566299] (simple_listener) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.568909] (simple_listener) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.574037] (simple_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600582] (-) TimerEvent: {}
+[0.701136] (-) TimerEvent: {}
+[0.726634] (simple_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.736882] (simple_listener) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.737118] (simple_listener) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.737220] (simple_listener) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.750884] (simple_listener) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.801402] (-) TimerEvent: {}
+[0.901837] (-) TimerEvent: {}
+[0.946141] (simple_listener) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002018] (-) TimerEvent: {}
+[1.090582] (simple_listener) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.102185] (-) TimerEvent: {}
+[1.173465] (simple_listener) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.182897] (simple_listener) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.198462] (simple_listener) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.202367] (-) TimerEvent: {}
+[1.225123] (simple_listener) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.256694] (simple_listener) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.302561] (-) TimerEvent: {}
+[1.334276] (simple_listener) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.339825] (simple_listener) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402917] (-) TimerEvent: {}
+[1.488735] (simple_listener) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.503043] (-) TimerEvent: {}
+[1.527139] (simple_listener) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.594654] (simple_listener) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.603264] (-) TimerEvent: {}
+[1.613134] (simple_listener) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.703517] (-) TimerEvent: {}
+[1.752143] (simple_listener) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.754472] (simple_listener) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.805897] (-) TimerEvent: {}
+[1.906364] (-) TimerEvent: {}
+[1.909861] (simple_listener) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.912926] (simple_listener) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.006518] (-) TimerEvent: {}
+[2.047747] (simple_listener) StdoutLine: {'line': b'-- Found YARP: /usr/lib/x86_64-linux-gnu/cmake/YARP (found version "3.7.0")\n'}
+[2.048090] (simple_listener) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/YARP/YARPConfig.cmake:233 (message):\n'}
+[2.048967] (simple_listener) StderrLine: {'line': b'  The YARP_INCLUDE_DIRS variable is deprecated\n'}
+[2.049067] (simple_listener) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.049150] (simple_listener) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:9223372036854775807 (_yarp_deprecated_variable_warning)\n'}
+[2.049233] (simple_listener) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:112 (list_append_unique)\n'}
+[2.049315] (simple_listener) StderrLine: {'line': b'  CMakeLists.txt:19 (ament_target_dependencies)\n'}
+[2.049396] (simple_listener) StderrLine: {'line': b'\n'}
+[2.049477] (simple_listener) StderrLine: {'line': b'\x1b[0m\n'}
+[2.106744] (-) TimerEvent: {}
+[2.131441] (simple_listener) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.153410] (simple_listener) StdoutLine: {'line': b'-- Generating done\n'}
+[2.155980] (simple_listener) StdoutLine: {'line': b'-- Build files have been written to: /home/peach/ros2_ws/src/simple_listener/build/simple_listener\n'}
+[2.172567] (simple_listener) CommandEnded: {'returncode': 0}
+[2.173039] (simple_listener) JobProgress: {'identifier': 'simple_listener', 'progress': 'build'}
+[2.174880] (simple_listener) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peach/ros2_ws/src/simple_listener/build/simple_listener', '--', '-j4', '-l4'], 'cwd': '/home/peach/ros2_ws/src/simple_listener/build/simple_listener', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'peach'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peach'), ('OLDPWD', '/home/peach'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('SYSTEMD_EXEC_PID', '21157'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/peach/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'peach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/peach-virtual-machine:@/tmp/.ICE-unix/1254,unix/peach-virtual-machine:/tmp/.ICE-unix/1254'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e76a0257_602a_4fb4_bf27_0f8ff2ce8818'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JDY3V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1076'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peach/install/simple_listener:/home/peach/install/ros2_bridage_yarp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/peach/ros2_ws/src/simple_listener/build/simple_listener'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peach/install/simple_listener:/home/peach/install/ros2_bridage_yarp:/opt/ros/humble')]), 'shell': False}
+[2.210883] (-) TimerEvent: {}
+[2.304173] (simple_listener) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o\x1b[0m\n'}
+[2.311180] (-) TimerEvent: {}
+[2.415365] (-) TimerEvent: {}
+[2.496540] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:2:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kyarp::os::Network.h: No such file or directory\n'}
+[2.496745] (simple_listener) StderrLine: {'line': b'    2 | #include \x1b[01;31m\x1b[K<yarp::os::Network.h>\x1b[m\x1b[K\n'}
+[2.496925] (simple_listener) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.497012] (simple_listener) StderrLine: {'line': b'compilation terminated.\n'}
+[2.497346] (simple_listener) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1\n'}
+[2.498260] (simple_listener) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2\n'}
+[2.498639] (simple_listener) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.506359] (simple_listener) CommandEnded: {'returncode': 2}
+[2.516287] (-) TimerEvent: {}
+[2.600099] (simple_listener) JobEnded: {'identifier': 'simple_listener', 'rc': 2}
+[2.610690] (-) EventReactorShutdown: {}
