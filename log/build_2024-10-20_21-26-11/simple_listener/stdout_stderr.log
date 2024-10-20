@@ -1,0 +1,80 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found YARP: /usr/lib/x86_64-linux-gnu/cmake/YARP (found version "3.7.0")
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/YARP/YARPConfig.cmake:233 (message):
+  The YARP_INCLUDE_DIRS variable is deprecated
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:9223372036854775807 (_yarp_deprecated_variable_warning)
+  /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:112 (list_append_unique)
+  CMakeLists.txt:21 (ament_target_dependencies)
+
+[0m
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+[35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o[0m
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_message()[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:69:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   69 |         yarp::os::Bottle* [01;35m[Kbc[m[K = p_cmd.read();
+      |                           [01;35m[K^~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_odometry()[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:78:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+   78 |             [01;31m[Kvector[m[K<double> tou(4);
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:78:13:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+  389 |     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+      |           [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:1[m[K:
+[01m[K/usr/include/c++/11/vector:86:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::vector[m[K’
+   86 |       using [01;36m[Kvector[m[K = std::vector<_Tp, polymorphic_allocator<_Tp>>;
+      |             [01;36m[K^~~~~~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:78:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   78 |             vector<[01;31m[Kdouble[m[K> tou(4);
+      |                    [01;31m[K^~~~~~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:79:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktou[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_tou[m[K’?
+   79 |             for(int i = 0; i < [01;31m[Ktou[m[K.size(); i++)
+      |                                [01;31m[K^~~[m[K
+      |                                [32m[Kp_tou[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:84:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktou[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_tou[m[K’?
+   84 |             double vx = [01;31m[Ktou[m[K[0];
+      |                         [01;31m[K^~~[m[K
+      |                         [32m[Kp_tou[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:87:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   87 |             double [01;35m[Kta[m[K = tou[3];
+      |                    [01;35m[K^~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:113:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  113 |         for (int i = 0; [01;35m[Ki < cmd.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

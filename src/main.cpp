@@ -6,6 +6,8 @@
 #include <yarp/os/Bottle.h>
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <geometry_msgs/msg/twist.hpp>
+#include <nav_msgs/msg/odometry.hpp>
+#include <vector>
 
 class YarpReceiver : public rclcpp::Node
 {
@@ -26,7 +28,7 @@ public:
         // Connect to the sender port
         yarp::os::Network::connect("/sender", "/receiver");
         yarp::os::Network::connect("/vehicleDriver/remote:i", "/remoteController/remote:i");  //motor command
-        //yarp::os::Network::connect("/remoteController/remote:o", "/receiver");  //encoder reading
+        yarp::os::Network::connect("vehicleDriver/encoder:o", "/remoteController/remote:o");  //encoder reading
         
         // Create a timer to periodically check for messages
         timer_ = this->create_wall_timer(
@@ -36,6 +38,8 @@ public:
 
         // Initialize ROS publisher
         publisher_ = this->create_publisher<std_msgs::msg::String>("yarp_to_ros", 10);
+        odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odometry", 10); //odometry
+        // cmd_vel subscriber
         cmd_subscriber_ = this->create_subscription<geometry_msgs::msg::Twist>(
             "cmd_vel", 10, std::bind(&YarpReceiver::cmd_callback, this, std::placeholders::_1)
         );
@@ -45,7 +49,7 @@ public:
     {
         port.close();
         p_cmd.close();
-        //_tou.close();
+        p_tou.close();
     }
 
 private:
@@ -64,6 +68,32 @@ private:
 
         yarp::os::Bottle* bc = p_cmd.read();
         
+    }
+
+    void receive_odometry()
+    {
+        yarp::os::Bottle* bt = p_tou.read(false);
+        if (bt != nullptr)
+        {
+            std::vector<double> tou(4);
+            for(int i = 0; i < tou.size(); i++)
+            {
+                tou[i] = bt->get(i).asFloat64();
+            }
+            // Extract the values from the bottle
+            double vx = tou[0];
+            double vy = tou[1];
+            double w  = tou[2];
+            double ta = tou[3];
+
+            // Publish the odometry message
+            auto odom = nav_msgs::msg::Odometry();
+            odom.pose.pose.position.x = vx;
+            odom.pose.pose.position.y = vy;
+            odom.pose.pose.orientation.z = w;
+            //odom.pose.pose.orientation.w = ta;
+            odom_publisher_->publish(odom);
+        }
     }
 
     void cmd_callback(const geometry_msgs::msg::Twist::SharedPtr msg)
@@ -93,7 +123,8 @@ private:
 
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
-    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_subscriber_;
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_; //odometry
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_subscriber_; //cmd_vel
 };
 
 int main(int argc, char * argv[])

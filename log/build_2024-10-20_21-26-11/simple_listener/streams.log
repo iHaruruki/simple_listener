@@ -1,0 +1,82 @@
+[0.017s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.061s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.193s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.207s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.241s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.245s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.253s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.267s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.284s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.332s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.332s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.482s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.558s] -- Found YARP: /usr/lib/x86_64-linux-gnu/cmake/YARP (found version "3.7.0")
+[0.559s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.576s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.599s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/YARP/YARPConfig.cmake:233 (message):
+[0.599s]   The YARP_INCLUDE_DIRS variable is deprecated
+[0.599s] Call Stack (most recent call first):
+[0.599s]   /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:9223372036854775807 (_yarp_deprecated_variable_warning)
+[0.599s]   /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:112 (list_append_unique)
+[0.599s]   CMakeLists.txt:21 (ament_target_dependencies)
+[0.599s] 
+[0.599s] [0m
+[0.675s] -- Configuring done
+[0.698s] -- Generating done
+[0.698s] -- Build files have been written to: /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+[0.745s] [35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[0.787s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o[0m
+[3.500s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_message()[m[K’:
+[3.500s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:69:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.500s]    69 |         yarp::os::Bottle* [01;35m[Kbc[m[K = p_cmd.read();
+[3.500s]       |                           [01;35m[K^~[m[K
+[3.501s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_odometry()[m[K’:
+[3.501s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:78:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+[3.501s]    78 |             [01;31m[Kvector[m[K<double> tou(4);
+[3.501s]       |             [01;31m[K^~~~~~[m[K
+[3.513s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:78:13:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[3.513s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[3.513s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[3.513s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[3.513s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[3.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[3.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.514s]                  from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:1[m[K:
+[3.514s] [01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+[3.514s]   389 |     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+[3.514s]       |           [01;36m[K^~~~~~[m[K
+[3.514s] In file included from [01m[K/usr/include/c++/11/functional:62[m[K,
+[3.514s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[3.514s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[3.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[3.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.514s]                  from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:1[m[K:
+[3.515s] [01m[K/usr/include/c++/11/vector:86:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::vector[m[K’
+[3.515s]    86 |       using [01;36m[Kvector[m[K = std::vector<_Tp, polymorphic_allocator<_Tp>>;
+[3.515s]       |             [01;36m[K^~~~~~[m[K
+[3.515s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:78:20:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[3.515s]    78 |             vector<[01;31m[Kdouble[m[K> tou(4);
+[3.515s]       |                    [01;31m[K^~~~~~[m[K
+[3.517s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:79:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktou[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_tou[m[K’?
+[3.517s]    79 |             for(int i = 0; i < [01;31m[Ktou[m[K.size(); i++)
+[3.517s]       |                                [01;31m[K^~~[m[K
+[3.517s]       |                                [32m[Kp_tou[m[K
+[3.521s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:84:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktou[m[K’ was not declared in this scope; did you mean ‘[01m[Kp_tou[m[K’?
+[3.522s]    84 |             double vx = [01;31m[Ktou[m[K[0];
+[3.522s]       |                         [01;31m[K^~~[m[K
+[3.522s]       |                         [32m[Kp_tou[m[K
+[3.522s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:87:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.522s]    87 |             double [01;35m[Kta[m[K = tou[3];
+[3.522s]       |                    [01;35m[K^~[m[K
+[3.524s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.524s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:113:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.524s]   113 |         for (int i = 0; [01;35m[Ki < cmd.size()[m[K; i++)
+[3.524s]       |                         [01;35m[K~~^~~~~~~~~~~~[m[K
+[5.665s] gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1
+[5.665s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2
+[5.666s] gmake: *** [Makefile:146: all] Error 2
+[5.672s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
