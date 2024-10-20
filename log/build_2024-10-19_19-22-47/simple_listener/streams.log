@@ -1,0 +1,23 @@
+[0.016s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.128s] [35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[0.172s] [100%] Built target simple_listener
+[0.193s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.277s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+[0.288s] -- Install configuration: ""
+[0.289s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/lib/simple_listener/simple_listener
+[0.290s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/package_run_dependencies/simple_listener
+[0.290s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/parent_prefix_path/simple_listener
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.sh
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.dsv
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.sh
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.dsv
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.bash
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.sh
+[0.291s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.zsh
+[0.292s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.dsv
+[0.292s] -- Installing: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.dsv
+[0.292s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/packages/simple_listener
+[0.292s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig.cmake
+[0.292s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig-version.cmake
+[0.292s] -- Up-to-date: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.xml
+[0.295s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener

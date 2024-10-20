@@ -1,4 +1,5 @@
 #include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <yarp/os/Network.h>
 #include <yarp/os/Port.h>
 #include <yarp/os/Bottle.h>
@@ -16,6 +17,9 @@ public:
         
         // Open YARP port
         port.open("/receiver");
+
+        // Connect to the sender port
+        yarp::os::Network::connect("/sender", "/receiver");
         
         // Create a timer to periodically check for messages
         timer_ = this->create_wall_timer(
@@ -47,7 +51,14 @@ int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<YarpReceiver>();
-    rclcpp::spin(node);
+
+    rclcpp::Rate rate(10);
+    while(rclcpp::ok())
+    {
+        rclcpp::spin_some(node);
+        rate.sleep();
+    }
+
     rclcpp::shutdown();
     return 0;
 }

@@ -1,0 +1,4 @@
+Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener
