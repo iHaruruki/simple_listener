@@ -1,0 +1,41 @@
+[0.026s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.131s] [35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[0.187s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o[0m
+[3.356s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_message()[m[K’:
+[3.356s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:76:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.356s]    76 |         yarp::os::Bottle* [01;35m[Kbc[m[K = p_cmd.read();
+[3.357s]       |                           [01;35m[K^~[m[K
+[3.358s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_odometry()[m[K’:
+[3.359s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:86:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.359s]    86 |             for(int i = 0; [01;35m[Ki < tou.size()[m[K; i++)
+[3.359s]       |                            [01;35m[K~~^~~~~~~~~~~~[m[K
+[3.359s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:94:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.359s]    94 |             double [01;35m[Kta[m[K = tou[3];
+[3.359s]       |                    [01;35m[K^~[m[K
+[3.360s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.361s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:120:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.361s]   120 |         for (int i = 0; [01;35m[Ki < cmd.size()[m[K; i++)
+[3.361s]       |                         [01;35m[K~~^~~~~~~~~~~~[m[K
+[9.703s] [100%] [32m[1mLinking CXX executable simple_listener[0m
+[10.701s] [100%] Built target simple_listener
+[10.747s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[10.893s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+[10.912s] -- Install configuration: ""
+[10.915s] -- Execute custom install script
+[10.916s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/lib/simple_listener/simple_listener
+[10.919s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/package_run_dependencies/simple_listener
+[10.919s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/parent_prefix_path/simple_listener
+[10.920s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.sh
+[10.922s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.dsv
+[10.922s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.sh
+[10.923s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.dsv
+[10.923s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.bash
+[10.925s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.sh
+[10.926s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.zsh
+[10.926s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.dsv
+[10.926s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.dsv
+[10.953s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/packages/simple_listener
+[10.955s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig.cmake
+[10.958s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig-version.cmake
+[10.958s] -- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.xml
+[10.963s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener

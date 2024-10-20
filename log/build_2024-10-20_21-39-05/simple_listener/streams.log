@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.123s] [35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[0.193s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o[0m
+[3.193s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_message()[m[K’:
+[3.194s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:69:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.194s]    69 |         yarp::os::Bottle* [01;35m[Kbc[m[K = p_cmd.read();
+[3.194s]       |                           [01;35m[K^~[m[K
+[3.194s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_odometry()[m[K’:
+[3.195s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:79:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.195s]    79 |             for(int i = 0; [01;35m[Ki < tou.size()[m[K; i++)
+[3.195s]       |                            [01;35m[K~~^~~~~~~~~~~~[m[K
+[3.195s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:87:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.195s]    87 |             double [01;35m[Kta[m[K = tou[3];
+[3.195s]       |                    [01;35m[K^~[m[K
+[3.197s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.197s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:113:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[3.197s]   113 |         for (int i = 0; [01;35m[Ki < cmd.size()[m[K; i++)
+[3.197s]       |                         [01;35m[K~~^~~~~~~~~~~~[m[K
+[3.203s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.203s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:142:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kport[m[K’ was not declared in this scope
+[3.203s]   142 |     [01;31m[Kport[m[K.close();
+[3.203s]       |     [01;31m[K^~~~[m[K
+[5.473s] gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1
+[5.473s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2
+[5.474s] gmake: *** [Makefile:146: all] Error 2
+[5.488s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4

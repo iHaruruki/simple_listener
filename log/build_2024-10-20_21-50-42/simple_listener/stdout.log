@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable simple_listener[0m
+[100%] Built target simple_listener
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/lib/simple_listener/simple_listener
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/package_run_dependencies/simple_listener
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/parent_prefix_path/simple_listener
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.sh
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.dsv
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.bash
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.sh
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.zsh
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.dsv
+-- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.dsv
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/packages/simple_listener
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig.cmake
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig-version.cmake
+-- Up-to-date symlink: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.xml

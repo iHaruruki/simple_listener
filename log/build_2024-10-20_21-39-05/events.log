@@ -1,0 +1,88 @@
+[0.000000] (-) TimerEvent: {}
+[0.000544] (simple_listener) JobQueued: {'identifier': 'simple_listener', 'dependencies': OrderedDict()}
+[0.000604] (simple_listener) JobStarted: {'identifier': 'simple_listener'}
+[0.017930] (simple_listener) JobProgress: {'identifier': 'simple_listener', 'progress': 'cmake'}
+[0.022939] (simple_listener) JobProgress: {'identifier': 'simple_listener', 'progress': 'build'}
+[0.023293] (simple_listener) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peach/ros2_ws/src/simple_listener/build/simple_listener', '--', '-j4', '-l4'], 'cwd': '/home/peach/ros2_ws/src/simple_listener/build/simple_listener', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'peach'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peach'), ('OLDPWD', '/home/peach/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('SYSTEMD_EXEC_PID', '1306'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/peach/ros2_ws/install:/home/peach/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'peach'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peach'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/peach-virtual-machine:@/tmp/.ICE-unix/1277,unix/peach-virtual-machine:/tmp/.ICE-unix/1277'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/adb2a4cf_1b54_40d5_b58f_a62e0cd7084c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q9FYV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.141'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peach/ros2_ws/install/simple_receiver_node:/home/peach/ros2_ws/install/simple_listener:/home/peach/ros2_ws/install/ros2_bridage_yarp:/home/peach/ros2_ws/install/loop_subscriber:/home/peach/ros2_ws/src/install/simple_receiver_node:/home/peach/ros2_ws/src/install/simple_listener:/home/peach/ros2_ws/src/install/ros2_bridage_yarp:/home/peach/ros2_ws/src/install/loop_subscriber:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/peach/ros2_ws/src/simple_listener/build/simple_listener'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peach/ros2_ws/install/simple_receiver_node:/home/peach/ros2_ws/install/simple_listener:/home/peach/ros2_ws/install/ros2_bridage_yarp:/home/peach/ros2_ws/install/loop_subscriber:/home/peach/ros2_ws/src/install/simple_receiver_node:/home/peach/ros2_ws/src/install/simple_listener:/home/peach/ros2_ws/src/install/ros2_bridage_yarp:/home/peach/ros2_ws/src/install/loop_subscriber:/opt/ros/humble')]), 'shell': False}
+[0.098997] (-) TimerEvent: {}
+[0.122565] (simple_listener) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simple_listener\x1b[0m\n'}
+[0.193137] (simple_listener) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o\x1b[0m\n'}
+[0.200389] (-) TimerEvent: {}
+[0.300867] (-) TimerEvent: {}
+[0.402225] (-) TimerEvent: {}
+[0.503032] (-) TimerEvent: {}
+[0.604080] (-) TimerEvent: {}
+[0.704579] (-) TimerEvent: {}
+[0.805034] (-) TimerEvent: {}
+[0.905995] (-) TimerEvent: {}
+[1.006472] (-) TimerEvent: {}
+[1.107660] (-) TimerEvent: {}
+[1.208435] (-) TimerEvent: {}
+[1.309093] (-) TimerEvent: {}
+[1.409634] (-) TimerEvent: {}
+[1.510320] (-) TimerEvent: {}
+[1.611340] (-) TimerEvent: {}
+[1.711848] (-) TimerEvent: {}
+[1.812289] (-) TimerEvent: {}
+[1.912977] (-) TimerEvent: {}
+[2.013707] (-) TimerEvent: {}
+[2.114204] (-) TimerEvent: {}
+[2.214862] (-) TimerEvent: {}
+[2.315595] (-) TimerEvent: {}
+[2.416562] (-) TimerEvent: {}
+[2.517038] (-) TimerEvent: {}
+[2.617974] (-) TimerEvent: {}
+[2.718906] (-) TimerEvent: {}
+[2.819922] (-) TimerEvent: {}
+[2.920615] (-) TimerEvent: {}
+[3.021435] (-) TimerEvent: {}
+[3.122040] (-) TimerEvent: {}
+[3.193838] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid YarpReceiver::receive_message()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.194096] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:69:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kbc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.194198] (simple_listener) StderrLine: {'line': b'   69 |         yarp::os::Bottle* \x1b[01;35m\x1b[Kbc\x1b[m\x1b[K = p_cmd.read();\n'}
+[3.194326] (simple_listener) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.194921] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid YarpReceiver::receive_odometry()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.195160] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:79:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.195307] (simple_listener) StderrLine: {'line': b'   79 |             for(int i = 0; \x1b[01;35m\x1b[Ki < tou.size()\x1b[m\x1b[K; i++)\n'}
+[3.195394] (simple_listener) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.195476] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:87:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kta\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.195560] (simple_listener) StderrLine: {'line': b'   87 |             double \x1b[01;35m\x1b[Kta\x1b[m\x1b[K = tou[3];\n'}
+[3.195642] (simple_listener) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.197253] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.197397] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:113:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.197485] (simple_listener) StderrLine: {'line': b'  113 |         for (int i = 0; \x1b[01;35m\x1b[Ki < cmd.size()\x1b[m\x1b[K; i++)\n'}
+[3.197571] (simple_listener) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.203369] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.203551] (simple_listener) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:142:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kport\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.203636] (simple_listener) StderrLine: {'line': b'  142 |     \x1b[01;31m\x1b[Kport\x1b[m\x1b[K.close();\n'}
+[3.203720] (simple_listener) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.222394] (-) TimerEvent: {}
+[3.323444] (-) TimerEvent: {}
+[3.424039] (-) TimerEvent: {}
+[3.524828] (-) TimerEvent: {}
+[3.625547] (-) TimerEvent: {}
+[3.726287] (-) TimerEvent: {}
+[3.826808] (-) TimerEvent: {}
+[3.927623] (-) TimerEvent: {}
+[4.028959] (-) TimerEvent: {}
+[4.129912] (-) TimerEvent: {}
+[4.230856] (-) TimerEvent: {}
+[4.331592] (-) TimerEvent: {}
+[4.432765] (-) TimerEvent: {}
+[4.533602] (-) TimerEvent: {}
+[4.634719] (-) TimerEvent: {}
+[4.735665] (-) TimerEvent: {}
+[4.836476] (-) TimerEvent: {}
+[4.937328] (-) TimerEvent: {}
+[5.038197] (-) TimerEvent: {}
+[5.139206] (-) TimerEvent: {}
+[5.240022] (-) TimerEvent: {}
+[5.341061] (-) TimerEvent: {}
+[5.442053] (-) TimerEvent: {}
+[5.472025] (simple_listener) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1\n'}
+[5.473934] (simple_listener) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2\n'}
+[5.474100] (simple_listener) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.488206] (simple_listener) CommandEnded: {'returncode': 2}
+[5.542280] (-) TimerEvent: {}
+[5.570608] (simple_listener) JobEnded: {'identifier': 'simple_listener', 'rc': 2}
+[5.581316] (-) EventReactorShutdown: {}

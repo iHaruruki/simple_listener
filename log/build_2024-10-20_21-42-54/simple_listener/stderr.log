@@ -1,0 +1,15 @@
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_message()[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:76:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   76 |         yarp::os::Bottle* [01;35m[Kbc[m[K = p_cmd.read();
+      |                           [01;35m[K^~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_odometry()[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:86:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   86 |             for(int i = 0; [01;35m[Ki < tou.size()[m[K; i++)
+      |                            [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:94:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   94 |             double [01;35m[Kta[m[K = tou[3];
+      |                    [01;35m[K^~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:120:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  120 |         for (int i = 0; [01;35m[Ki < cmd.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~[m[K

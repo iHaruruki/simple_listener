@@ -23,12 +23,12 @@ public:
         // Open YARP port
         port.open("/receiver");
         p_cmd.open("/remoteController/remote:o");   //motor command
-        //_tou.open("/remoteController/remote:i");   //encoder reading
+        p_tou.open("/remoteController/remote:i");   //encoder reading
 
         // Connect to the sender port
         yarp::os::Network::connect("/sender", "/receiver");
         yarp::os::Network::connect("/vehicleDriver/remote:i", "/remoteController/remote:i");  //motor command
-        yarp::os::Network::connect("vehicleDriver/encoder:o", "/remoteController/remote:o");  //encoder reading
+        yarp::os::Network::connect("/vehicleDriver/encoder:o", "/remoteController/remote:o");  //encoder reading
         
         // Create a timer to periodically check for messages
         timer_ = this->create_wall_timer(
@@ -37,15 +37,22 @@ public:
         );
 
         // Initialize ROS publisher
-        publisher_ = this->create_publisher<std_msgs::msg::String>("yarp_to_ros", 10);
-        odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odometry", 10); //odometry
+        publisher_ = this->create_publisher<std_msgs::msg::String>("yarp_to_ros", 50);
+        odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odometry", 50); //odometry
         // cmd_vel subscriber
         cmd_subscriber_ = this->create_subscription<geometry_msgs::msg::Twist>(
-            "cmd_vel", 10, std::bind(&YarpReceiver::cmd_callback, this, std::placeholders::_1)
+            "cmd_vel", 50, std::bind(&YarpReceiver::cmd_callback, this, std::placeholders::_1)
         );
     }
 
-    ~YarpReceiver()
+    /*~YarpReceiver()
+    {
+        port.close();
+        p_cmd.close();
+        p_tou.close();
+    }*/
+
+    void close_ports()
     {
         port.close();
         p_cmd.close();
@@ -132,13 +139,14 @@ int main(int argc, char * argv[])
     rclcpp::init(argc, argv);
     auto node = std::make_shared<YarpReceiver>();
 
-    rclcpp::Rate rate(10);
+    rclcpp::Rate rate(50);
     while(rclcpp::ok())
     {
         rclcpp::spin_some(node);
         rate.sleep();
     }
 
+    node->close_ports();
     rclcpp::shutdown();
     return 0;
 }

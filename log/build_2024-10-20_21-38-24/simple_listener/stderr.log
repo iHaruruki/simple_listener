@@ -1,0 +1,70 @@
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_message()[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:69:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   69 |         yarp::os::Bottle* [01;35m[Kbc[m[K = p_cmd.read();
+      |                           [01;35m[K^~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::receive_odometry()[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:79:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   79 |             for(int i = 0; [01;35m[Ki < tou.size()[m[K; i++)
+      |                            [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:87:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   87 |             double [01;35m[Kta[m[K = tou[3];
+      |                    [01;35m[K^~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In member function ‘[01m[Kvoid YarpReceiver::cmd_callback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:113:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  113 |         for (int i = 0; [01;35m[Ki < cmd.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:142:5:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator~[m[K’ (operand type is ‘[01m[KYarpReceiver[m[K’)
+  142 |     [01;31m[K~YarpReceiver()[m[K;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:1[m[K:
+[01m[K/usr/include/c++/11/future:160:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::launch std::operator~(std::launch)[m[K’
+  160 |   constexpr launch [01;36m[Koperator[m[K~(launch __x) noexcept
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/future:160:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYarpReceiver[m[K’ to ‘[01m[Kstd::launch[m[K’
+  160 |   constexpr launch operator~([01;36m[Klaunch __x[m[K) noexcept
+      |                              [01;36m[K~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/ios_base.h:95:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::_Ios_Fmtflags std::operator~(std::_Ios_Fmtflags)[m[K’
+   95 |   [01;36m[Koperator[m[K~(_Ios_Fmtflags __a)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:95:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYarpReceiver[m[K’ to ‘[01m[Kstd::_Ios_Fmtflags[m[K’
+   95 |   operator~([01;36m[K_Ios_Fmtflags __a[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:137:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::_Ios_Openmode std::operator~(std::_Ios_Openmode)[m[K’
+  137 |   [01;36m[Koperator[m[K~(_Ios_Openmode __a)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:137:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYarpReceiver[m[K’ to ‘[01m[Kstd::_Ios_Openmode[m[K’
+  137 |   operator~([01;36m[K_Ios_Openmode __a[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:177:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::_Ios_Iostate std::operator~(std::_Ios_Iostate)[m[K’
+  177 |   [01;36m[Koperator[m[K~(_Ios_Iostate __a)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:177:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYarpReceiver[m[K’ to ‘[01m[Kstd::_Ios_Iostate[m[K’
+  177 |   operator~([01;36m[K_Ios_Iostate __a[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/yarp/conf/numeric.h:19[m[K,
+                 from [01m[K/usr/include/yarp/os/ConnectionReader.h:10[m[K,
+                 from [01m[K/usr/include/yarp/os/PortReaderCreator.h:10[m[K,
+                 from [01m[K/usr/include/yarp/os/Port.h:13[m[K,
+                 from [01m[K/usr/include/yarp/os/AbstractContactable.h:9[m[K,
+                 from [01m[K/usr/include/yarp/os/all.h:11[m[K,
+                 from [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:3[m[K:
+[01m[K/usr/include/c++/11/cstddef:152:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::byte std::operator~(std::byte)[m[K’
+  152 |   [01;36m[Koperator[m[K~(byte __b) noexcept
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/cstddef:152:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KYarpReceiver[m[K’ to ‘[01m[Kstd::byte[m[K’
+  152 |   operator~([01;36m[Kbyte __b[m[K) noexcept
+      |             [01;36m[K~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
