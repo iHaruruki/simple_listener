@@ -1,0 +1,51 @@
+[0.020s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/peach/ros2_ws/src/simple_listener -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peach/ros2_ws/src/simple_listener/install/simple_listener
+[0.046s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.216s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.233s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.275s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.280s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.287s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.299s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.317s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.358s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.359s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.481s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.553s] -- Found YARP: /usr/lib/x86_64-linux-gnu/cmake/YARP (found version "3.7.0")
+[0.553s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.572s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/YARP/YARPConfig.cmake:233 (message):
+[0.573s]   The YARP_INCLUDE_DIRS variable is deprecated
+[0.573s] Call Stack (most recent call first):
+[0.573s]   /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:9223372036854775807 (_yarp_deprecated_variable_warning)
+[0.573s]   /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:112 (list_append_unique)
+[0.573s]   CMakeLists.txt:20 (ament_target_dependencies)
+[0.573s] 
+[0.573s] [0m
+[0.651s] -- Configuring done
+[0.685s] -- Generating done
+[0.689s] -- Build files have been written to: /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+[0.707s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/peach/ros2_ws/src/simple_listener -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peach/ros2_ws/src/simple_listener/install/simple_listener
+[0.707s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.781s] [35m[1mConsolidate compiler generated dependencies of target simple_listener[0m
+[0.830s] [ 50%] [32m[1mLinking CXX executable simple_listener[0m
+[1.443s] [100%] Built target simple_listener
+[1.466s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[1.537s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener
+[1.548s] -- Install configuration: ""
+[1.549s] -- Execute custom install script
+[1.550s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/lib/simple_listener/simple_listener
+[1.565s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/package_run_dependencies/simple_listener
+[1.578s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/parent_prefix_path/simple_listener
+[1.591s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.sh
+[1.606s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/ament_prefix_path.dsv
+[1.619s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.sh
+[1.632s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/environment/path.dsv
+[1.647s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.bash
+[1.664s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.sh
+[1.687s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.zsh
+[1.703s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/local_setup.dsv
+[1.718s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.dsv
+[1.735s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/ament_index/resource_index/packages/simple_listener
+[1.753s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig.cmake
+[1.767s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/cmake/simple_listenerConfig-version.cmake
+[1.780s] -- Symlinking: /home/peach/ros2_ws/src/simple_listener/install/simple_listener/share/simple_listener/package.xml
+[1.795s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/simple_listener/build/simple_listener

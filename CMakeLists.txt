@@ -14,9 +14,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(YARP REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 add_executable(simple_listener src/main.cpp)
-ament_target_dependencies(simple_listener rclcpp std_msgs YARP)
+ament_target_dependencies(simple_listener rclcpp std_msgs geometry_msgs YARP)
 
 #target_link_libraries(ros2_yarp_bridge YARP)
 

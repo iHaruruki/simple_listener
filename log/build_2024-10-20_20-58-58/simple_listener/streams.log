@@ -1,0 +1,10 @@
+[0.034s] Invoking command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
+[0.241s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_listener.dir/src/main.cpp.o[0m
+[1.064s] [01m[K/home/peach/ros2_ws/src/simple_listener/src/main.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/twist.hpp: No such file or directory
+[1.065s]     8 | #include [01;31m[K<geometry_msgs/msg/twist.hpp>[m[K
+[1.065s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.065s] compilation terminated.
+[1.067s] gmake[2]: *** [CMakeFiles/simple_listener.dir/build.make:76: CMakeFiles/simple_listener.dir/src/main.cpp.o] Error 1
+[1.068s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_listener.dir/all] Error 2
+[1.069s] gmake: *** [Makefile:146: all] Error 2
+[1.072s] Invoked command in '/home/peach/ros2_ws/src/simple_listener/build/simple_listener' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/simple_listener/build/simple_listener -- -j4 -l4
