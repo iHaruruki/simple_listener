@@ -26,6 +26,9 @@ public:
             std::chrono::seconds(1),
             std::bind(&YarpReceiver::receive_message, this)
         );
+
+        // Initialize ROS publisher
+        publisher_ = this->create_publisher<std_msgs::msg::String>("yarp_to_ros", 10);
     }
 
     ~YarpReceiver()
@@ -40,11 +43,17 @@ private:
         if (port.read(bot))
         {
             RCLCPP_INFO(this->get_logger(), "Received message: %s", bot.toString().c_str());
+
+            // Publish the received message to ROS topic
+            auto message = std_msgs::msg::String();
+            message.data =  bot.toString();
+            publisher_->publish(message);
         }
     }
 
     yarp::os::Port port;
     rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
 };
 
 int main(int argc, char * argv[])
