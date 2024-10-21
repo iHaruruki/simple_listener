@@ -130,7 +130,7 @@ private:
 
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
-    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_; //odometry
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;      //odometry
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_subscriber_; //cmd_vel
 };
 
@@ -139,7 +139,7 @@ int main(int argc, char * argv[])
     rclcpp::init(argc, argv);
     auto node = std::make_shared<YarpReceiver>();
 
-    rclcpp::Rate rate(50);
+    rclcpp::Rate rate(20);
     while(rclcpp::ok())
     {
         rclcpp::spin_some(node);
