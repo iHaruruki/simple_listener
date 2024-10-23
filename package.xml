@@ -4,7 +4,7 @@
   <name>simple_listener</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="haruki.isono861@gmail.com">peach</maintainer>
+  <maintainer email="haruki.isono861@gmail.com">Haruki Isono</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
